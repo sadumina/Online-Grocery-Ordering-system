@@ -1,0 +1,91 @@
+/* Gradient background for the right section */
+.gradient-custom-2 {
+    background: linear-gradient(to right, #ee7724, #d8363a, #dd3675, #b44593);
+    
+}
+
+@media (min-width: 768px) {
+    .gradient-form {
+        height: 0vh !important;
+        
+    }
+}
+
+@media (min-width: 769px) {
+    .gradient-custom-2 {
+        border-top-right-radius: .3rem;
+        border-bottom-right-radius: .3rem;
+        
+    }
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color:  #021012;
+    margin: 0;
+    padding: 5px;
+    /* background-image: url(img/backgroundimg.jpg);*/
+    background-size: cover;
+    
+    
+   
+}
+.col-lg-6{
+
+    background-color: #3A3A3A
+}
+
+.card {
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(178, 174, 174, 0.1);
+    
+}
+
+.card-body {
+    padding: 1rem;
+}
+
+.form-outline input {
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #fff3f3;
+    border-radius: 5px;
+    width: 100%;
+    
+}
+
+.form-outline input:focus {
+    outline: none;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+    border-color: #007bff;
+}
+
+.form-label {
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+.btn-primary {
+    background-color: #007bff;
+    border-color: #007bff;
+    padding: 10px 20px;
+    font-size: 1rem;
+    border-radius: 5px;
+}
+
+.btn-outline-danger {
+    padding: 10px 20px;
+    font-size: 1rem;
+    border-radius: 5px;
+}
+
+.text-muted {
+    color: #dfe4e8;
+}
+.form-outline .form-control, 
+.form-outline .form-label, 
+.form-outline input::placeholder, 
+.form-outline .btn {
+    color: white;
+}
