@@ -1,0 +1,158 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap");
+* {
+  font-family: Poppins; }
+
+.container {
+  width: 35rem;
+  padding: 2.5rem 0;
+  margin: 1.8rem auto;
+  display: flex;
+  flex-flow: column;
+  border: 1px solid rgba(117, 117, 117, 0.5);
+  border-radius: 4px;
+  /* Custom, iPhone Retina */ }
+  .container .logo {
+    margin: 0 4rem;
+    width: 170px;
+    height: 40px;
+    background: url("../img/savepay.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover; }
+  .container .title {
+    margin: 0 4rem;
+    font-size: 16px;
+    font-weight: bold;
+    color: #333333; }
+  .container .payment-details {
+    color: rgba(51, 51, 51, 0.6);
+    margin: 3rem 4rem;
+    font-size: 13px;
+    display: flex;
+    flex-flow: column; }
+    .container .payment-details span {
+      margin-bottom: 2px; }
+  .container .form {
+    padding: 2rem 4rem; }
+    .container .form .form-group {
+      width: 100%;
+      margin-bottom: 1.8rem; }
+      .container .form .form-group .outlined-input-field {
+        position: relative;
+        width: 100%; }
+        .container .form .form-group .outlined-input-field i {
+          background-image: none;
+          position: absolute;
+          top: 0.8rem;
+          right: 0.8rem;
+          width: 28px;
+          height: 18px; }
+        .container .form .form-group .outlined-input-field .suffix-mastercard {
+          background-image: url("../img/mastercard-icon.svg");
+          background-repeat: no-repeat;
+          background-size: contain; }
+        .container .form .form-group .outlined-input-field .suffix-visa {
+          background-image: url("../img/visa-icon.svg");
+          background-repeat: no-repeat;
+          background-size: contain;
+          position: absolute;
+          top: 1rem;
+          width: 32px;
+          height: 18px; }
+        .container .form .form-group .outlined-input-field .error-icon,
+        .container .form .form-group .outlined-input-field .warning-icon,
+        .container .form .form-group .outlined-input-field .helper-text {
+          display: none; }
+        .container .form .form-group .outlined-input-field label {
+          background-color: #fff;
+          color: #757575;
+          cursor: text;
+          position: absolute;
+          top: 0.8rem;
+          left: 1rem;
+          font-size: 12.5px; }
+        .container .form .form-group .outlined-input-field .outlined-text-field {
+          appearance: none;
+          -moz-appearance: none;
+          -webkit-appearance: none;
+          background-color: #fff;
+          border: 1pt solid rgba(117, 117, 117, 0.5);
+          border-radius: 4px;
+          color: #757575;
+          padding: 0.6rem;
+          width: calc(100% - 1.3rem); }
+        .container .form .form-group .outlined-input-field .outlined-text-field:hover {
+          border-color: #219bb2; }
+        .container .form .form-group .outlined-input-field .outlined-text-field:focus {
+          color: rgba(0, 0, 0, 0.65);
+          outline: none;
+          border: 1px solid #219bb2; }
+          .container .form .form-group .outlined-input-field .outlined-text-field:focus + label {
+            color: #219bb2 !important; }
+      .container .form .form-group .inline-form-group {
+        display: flex;
+        flex-flow: row;
+        justify-content: space-between;
+        margin-bottom: 2rem;
+        width: 100%; }
+        .container .form .form-group .inline-form-group div:nth-of-type(1) {
+          margin-right: 1rem; }
+        .container .form .form-group .inline-form-group div:nth-of-type(2) {
+          flex: 1 1 15em; }
+      .container .form .form-group .button {
+        float: right;
+        width: 9.2rem;
+        height: 42px;
+        background: #219bb2;
+        border: none;
+        border-radius: 5px;
+        font-size: 16px;
+        font-weight: 500;
+        color: #fff;
+        margin-top: 5px;
+        cursor: pointer;
+        transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1); }
+        .container .form .form-group .button:hover, .container .form .form-group .button:active, .container .form .form-group .button:focus {
+          background: #43afbf;
+          border: none !important;
+          outline: none; }
+  .container .verified {
+    display: flex;
+    width: 350px;
+    height: 50px;
+    justify-content: center;
+    align-items: center;
+    background: url("../img/verified.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin: 2rem auto;
+    margin-bottom: 0; }
+  @media only screen and (max-width: 375px) {
+    .container {
+      padding: 1rem 0; }
+      .container .logo {
+        margin: 0 1rem !important; }
+      .container .title {
+        margin: 0 1rem !important; }
+      .container .payment-details {
+        margin: 1rem !important; }
+      .container .form {
+        padding: 1rem !important; }
+        .container .form .button {
+          width: 48% !important; } }
+  @media only screen and (max-width: 575px) {
+    .container {
+      width: 95%;
+      margin: 1rem auto; }
+      .container .logo {
+        margin: 0 2rem; }
+      .container .title {
+        margin: 0 2rem;
+        font-size: 3.5vw; }
+      .container .payment-details {
+        margin: 1rem 2rem;
+        font-size: 2.6vw; }
+      .container .form {
+        padding: 2rem; }
+        .container .form .button {
+          width: 41% !important; } }

@@ -1,0 +1,63 @@
+:root {
+  --default-font: "Roboto",  system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  --heading-font: "Amatic SC",  sans-serif;
+  --nav-font: "Inter",  sans-serif;
+}
+
+/* Global Colors - The following color variables are used throughout the website. Updating them here will change the color scheme of the entire website */
+:root { 
+  --background-color: #ffffff; /* Background color for the entire website, including individual sections */
+  --default-color: #212529; /* Default color used for the majority of the text content across the entire website */
+  --heading-color: #37373f; /* Color for headings, subheadings and title throughout the website */
+  --accent-color: #ce1212; /* Accent color that represents your brand on the website. It's used for buttons, links, and other elements that need to stand out */
+  --surface-color: #ffffff; /* The surface color is used as a background of boxed elements within sections, such as cards, icon boxes, or other elements that require a visual separation from the global background. */
+  --contrast-color: #ffffff; /* Contrast color for text, ensuring readability against backgrounds of accent, heading, or default colors. */
+}
+
+/* Nav Menu Colors - The following color variables are used specifically for the navigation menu. They are separate from the global colors to allow for more customization options */
+:root {
+  --nav-color: #7f7f90;  /* The default color of the main navmenu links */
+  --nav-hover-color: #ce1212; /* Applied to main navmenu links when they are hovered over or active */
+  --nav-mobile-background-color: #ffffff; /* Used as the background color for mobile navigation menu */
+  --nav-dropdown-background-color: #ffffff; /* Used as the background color for dropdown items that appear when hovering over primary navigation items */
+  --nav-dropdown-color: #7f7f90; /* Used for navigation links of the dropdown items in the navigation menu. */
+  --nav-dropdown-hover-color: #ce1212; /* Similar to --nav-hover-color, this color is applied to dropdown navigation links when they are hovered over. */
+}
+
+.d-flex input {
+  width: 40px;
+  text-align: center;
+  font-size: 16px;
+  border: 1px solid #ddd;
+  margin: 0 5px;
+  border-radius: 5px;
+  padding: 3px;
+  
+}
+.cart-layout {
+	display: flex;
+	justify-content: space-between;
+	margin-top: 20px;
+	gap: 120px;
+}
+.cart-items {
+	flex: 0 0 65%;
+}
+.cart-summary {
+	flex:0 0 75%;
+}
+.card {
+	width: 100%;
+}
+.checkout-btn{
+  color: var(--contrast-color);
+  background: var(--accent-color);
+  font-size: 14px;
+  padding: 8px 26px;
+  margin-top: 10px;
+  border-radius: 50px;
+  transition: 0.3s;
+}
+.back-to-shop{
+    margin-top: 4.5rem;
+}
